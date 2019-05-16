@@ -1,0 +1,179 @@
+
+#=================================================================
+#       WORKSPACES
+#=================================================================
+
+set $WS1                "Default"
+set $WS2                "Browsing"
+set $WS3                "Research"
+set $WS4                "Office"
+set $WS5                "5"
+set $WS6                "6"
+set $WS7                "7"
+set $WS8                "8"
+set $WS9                "9"
+set $WS10              "10"
+
+#=================================================================
+#       INTERFACE
+#=================================================================
+
+focus_follows_mouse no      # Prevent activate window on hover
+font pango:monospace 8
+
+# Borders 
+new_window pixel 0
+new_float pixel 0
+for_window [class="^.*"] border pixel 2
+
+
+client.focused #ffffff #ffffff #ffffff #ffff00     #ff3300
+
+#=================================================================
+#       GAPS
+#=================================================================
+
+gaps inner 20
+gaps outer 0
+# smart_gaps on
+smart_borders on
+
+#=================================================================
+#       VARIABLE KEYS
+#=================================================================
+
+set $mod    Mod1
+set $ctrl   Control
+set $win    Mod4
+
+#=================================================================
+#       SHORTCUTS
+#=================================================================
+
+
+
+floating_modifier $mod     
+
+bindsym $ctrl+$mod+t exec i3-sensible-terminal      # start a terminal
+# bindsym $ctrl+t exec i3-sensible-terminal      # start a terminal
+
+
+# kill focused window
+bindsym $mod+F4 kill
+bindsym $mod+d exec --no-startup-id rofi -show drun     # start rofi
+
+# change focus
+bindsym $ctrl+KP_Left focus left
+bindsym $ctrl+KP_Down focus down
+bindsym $ctrl+KP_Up focus up
+bindsym $ctrl+KP_Right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $win+KP_Left   move left
+bindsym $win+KP_Down   move down
+bindsym $win+KP_Up     move up
+bindsym $win+KP_Right  move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $win+KP_Begin fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+
+# switch to workspace
+# bindsym $mod+1 workspace $WS1
+bindsym $ctrl+F1 workspace $WS1
+bindsym $ctrl+F2 workspace $WS2
+bindsym $ctrl+F3 workspace $WS3
+bindsym $ctrl+F4 workspace $WS4
+bindsym $ctrl+F5 workspace $WS5
+bindsym $ctrl+F6 workspace $WS6
+bindsym $ctrl+F7 workspace $WS7
+bindsym $ctrl+F8 workspace $WS8
+bindsym $ctrl+F9 workspace $WS9
+bindsym $ctrl+F10 workspace $WS10
+
+# move focused container to workspace
+bindsym $ctrl+Shift+F1 move container to workspace $ws1
+bindsym $ctrl+Shift+F2 move container to workspace $ws2
+bindsym $ctrl+Shift+F3 move container to workspace $ws3
+bindsym $ctrl+Shift+F4 move container to workspace $ws4
+bindsym $ctrl+Shift+F5 move container to workspace $ws5
+bindsym $ctrl+Shift+F6 move container to workspace $ws6
+bindsym $ctrl+Shift+F7 move container to workspace $ws7
+bindsym $ctrl+Shift+F8 move container to workspace $ws8
+bindsym $ctrl+Shift+F9 move container to workspace $ws9
+bindsym $ctrl+Shift+F10 move container to workspace $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $ctrl+$mod+r mode "resize"
+
+
+exec --no-startup-id xrandr -s 7 && xrandr --dpi 96 
+exec --no-startup-id feh --bg-fill ~/Pictures/summer.jpg
+exec --no-startup-id polybar mainbar & 
+# exec --no-startup-id conky -d -c ~/.config/.conkyrc
