@@ -22,4 +22,4 @@ ln -s -f ./rofi/side.rasi              ~/.config/rofi/side.rasi
 ln -s -f ./.Xresources                 ~/.Xresources
 ln -s -f ./gtk-3.0/settings.ini        ~/.config/gtk-3.0/settings.ini
 ln -s -f ./.gtk-2.0                    ~/.gtk-2.0
-cp       ./summer.jpg                  ~/Library/Pictures/bg.jpg
+cp summer.jpg                          ~/Library/Pictures/bg.jpg
