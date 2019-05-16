@@ -12,14 +12,14 @@ mkdir -p ~/.config/gtk-3.0
 
 # Symlink files
 
-ln -s -f ~/dotfiles/Code/User/settings.json     ~/.config/Code/User/settings.json
-ln -s -f ~/dotfiles/dunst/dunstrc               ~/.config/dunst/dunstrc
-ln -s -f ~/dotfiles/i3/config                   ~/.config/i3/config
-ln -s -f ~/dotfiles/neofetch/config             ~/.config/neofetch/config
-ln -s -f ~/dotfiles/polybar/config              ~/.config/polybar/config
-ln -s -f ~/dotfiles/rofi/config                 ~/.config/rofi/config
-ln -s -f ~/dotfiles/rofi/side.rasi              ~/.config/rofi/side.rasi
-ln -s -f ~/dotfiles/.Xresources                 ~/.Xresources
-ln -s -f ~/dotfiles/gtk-3.0/settings.ini        ~/.config/gtk-3.0/settings.ini
-ln -s -f ~/dotfiles/.gtk-2.0                    ~/.gtk-2.0
-cp ~/dotfiles/summer.jpg                        ~/Library/Pictures/bg.jpg
+ln -s -f ./Code/User/settings.json     ~/.config/Code/User/settings.json
+ln -s -f ./dunst/dunstrc               ~/.config/dunst/dunstrc
+ln -s -f ./i3/config                   ~/.config/i3/config
+ln -s -f ./neofetch/config             ~/.config/neofetch/config
+ln -s -f ./polybar/config              ~/.config/polybar/config
+ln -s -f ./rofi/config                 ~/.config/rofi/config
+ln -s -f ./rofi/side.rasi              ~/.config/rofi/side.rasi
+ln -s -f ./.Xresources                 ~/.Xresources
+ln -s -f ./gtk-3.0/settings.ini        ~/.config/gtk-3.0/settings.ini
+ln -s -f ./.gtk-2.0                    ~/.gtk-2.0
+cp       ./summer.jpg                  ~/Library/Pictures/bg.jpg
