@@ -27,7 +27,7 @@ new_float pixel 0
 for_window [class="^.*"] border pixel 2
 
 
-client.focused #ffffff #ffffff #ffffff #ffff00     #ff3300
+client.focused #ffffff #ffffff #ffffff #ffffff     #999999
 
 #=================================================================
 #       GAPS
