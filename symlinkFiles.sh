@@ -8,3 +8,5 @@ ln -s -f ~/dotfiles/rofi/config                 ~/.config/rofi/config
 ln -s -f ~/dotfiles/rofi/side.rasi              ~/.config/rofi/side.rasi
 ln -s -f ~/dotfiles/.Xresources                 ~/.Xresources
 ln -s -f ~/dotfiles/summer.jpg                 ~/Pictures/summer.jpg
+ln -s -f ~/dotfiles/gtk-3.0/settings.ini        ~/.config/gtk-3.0/settings.ini
+ln -s -f ~/dotfiles/.gtk-2.0                ~/.config/.gtk-2.0
