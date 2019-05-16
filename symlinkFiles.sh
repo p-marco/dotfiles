@@ -7,4 +7,4 @@ ln -s -f ~/dotfiles/polybar/config               ~/.config/polybar/config
 ln -s -f ~/dotfiles/rofi/config                 ~/.config/rofi/config
 ln -s -f ~/dotfiles/rofi/side.rasi              ~/.config/rofi/side.rasi
 ln -s -f ~/dotfiles/.Xresources                 ~/.Xresources
-ln -s -f ~/dotfiles/.summer.jpg                 ~/Pictures/summer.jpg
+ln -s -f ~/dotfiles/summer.jpg                 ~/Pictures/summer.jpg
