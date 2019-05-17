@@ -53,5 +53,5 @@ URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 URxvt.perl-ext-common: matcher
 ! normal font
-URxvt.font:xft:Source Code Pro:pixelsize=8:antialias=true,xft:Droid Sans Fallback:pixelsize=8:antialias=true
-URxvt.boldFont:xft:Source Code Pro:pixelsize=8:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=8:Bold:antialias=true
+URxvt.font:xft:Source Code Pro:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
+URxvt.boldFont:xft:Source Code Pro:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
