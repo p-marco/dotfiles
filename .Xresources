@@ -1,6 +1,4 @@
-URxvt.scrollBar:    false
 
-URxvt.internalBorder:  5
 
 
 ! special
@@ -39,3 +37,21 @@ URxvt.internalBorder:  5
 ! white
 *.color7:       #707880
 *.color15:      #c5c8c6
+
+
+URxvt.scrollBar:    false
+
+URxvt.internalBorder:  5
+
+
+URxvt.transparent: true
+URxvt.tintColor: #000
+URxvt.shading: 45
+! other settings
+! open URL in browser
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: matcher
+! normal font
+URxvt.font:xft:Source Code Pro:pixelsize=8:antialias=true,xft:Droid Sans Fallback:pixelsize=8:antialias=true
+URxvt.boldFont:xft:Source Code Pro:pixelsize=8:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=8:Bold:antialias=true
