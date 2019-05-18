@@ -13,7 +13,7 @@
     "editor.matchBrackets": false, // removes the highlight of matching brackets (I use Subtle Match Brackets extension for this)
     "editor.glyphMargin": false, // removes the space used mainly for debugging indicators
     "explorer.openEditors.visible": 0, // removes the open editors section at the top of the sidebar, you can see the opened files with ⌘ + ⌥ + Tab
-    "workbench.activityBar.visible": false, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through theCommand Palette
+    "workbench.activityBar.visible": true, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through theCommand Palette
     "workbench.editor.showIcons": false, // removes icon from opened files in tabs
     "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
     "workbench.statusBar.visible": false, // removes the status bar
@@ -26,5 +26,6 @@
         "editor.fontSize": 16,
         "terminal.integrated.lineHeight": 1.5,
         "editor.fontLigatures": true,
-        "terminal.integrated.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'"
+        "terminal.integrated.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
+        "workbench.startupEditor": "newUntitledFile"
 }
