@@ -30,7 +30,7 @@ font-2 = Weather Icons:size=12;1
 modules-left = rofi i3 title
 modules-center = date
 # modules-right =  memory cpu wifi network 
-modules-right =  keyboard network volume powermenu 
+modules-right = keyboard battery volume powermenu 
 tray-position = none
 tray-padding = 2
 scroll-up = i3wm-wsnext
@@ -133,9 +133,12 @@ format-muted = 0%  
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+
+
+
 [module/battery]
 type = internal/battery
-battery = BAT1
+battery = BAT0
 adapter = ACAD
 full-at = 98
 format-charging = <animation-charging> <label-charging>
@@ -185,8 +188,8 @@ screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
 [global/wm]
-margin-top = 0
-margin-bottom = 0
+margin-top = 5
+margin-bottom = 5
 ; vim:ft=dosini
 [module/openweathermap-simple]
 type = custom/script
@@ -529,7 +532,7 @@ interface = wlan1
 
 [module/network]
 type = internal/network
-interface = enp0s3
+interface = echo (ip route | grep '^default' | awk '{print $5}' | head -n1)
 
 ; Seconds to sleep between updates
 ; Default: 1
