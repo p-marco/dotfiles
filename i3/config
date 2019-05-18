@@ -173,7 +173,7 @@ mode "resize" {
 bindsym $ctrl+$mod+r mode "resize"
 
 
-exec --no-startup-id xrandr -s 7 && xrandr --dpi 96 
+# exec --no-startup-id xrandr -s 7 && xrandr --dpi 96 
 exec --no-startup-id feh --bg-fill ~/Library/Pictures/bg.jpg
 exec --no-startup-id polybar mainbar & 
 # exec --no-startup-id conky -d -c ~/.config/.conkyrc
