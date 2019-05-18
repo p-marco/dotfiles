@@ -6,6 +6,8 @@ stdenv.mkDerivation {
   buildInputs = [
     pkgs.texlive.combined.scheme-full
     pkgs.haskellPackages.pandoc-citeproc
+    pkgs.pandoc 
+    R
     rPackages.bookdown            
     rPackages.devtools
     rPackages.dplyr

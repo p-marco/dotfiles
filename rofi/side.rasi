@@ -11,7 +11,7 @@ configuration {
 }
 
 * {
-	background-color:            #000000;
+	background-color:            #111111;
 	text-color:                  #d3d7cf;
 	selbg:                       rgb(0, 86, 136);
 	actbg:                       rgb(22, 37, 46);
@@ -45,12 +45,13 @@ configuration {
 window {
 	location:	 west;
 	anchor:		 west;
-	x-offset: 0px;
-	height:		 100%;
+	x-offset: 20px;
+	height:		 95%;
 	width:		 25%;
 	margin-right: 60px;
 	orientation: horizontal;
 	children:	 [mainbox];
+	margin-top: 20px;
 }
 
 mainbox {
