@@ -30,7 +30,7 @@ font-2 = Weather Icons:size=12;1
 modules-left = rofi i3 title
 modules-center = date
 # modules-right =  memory cpu wifi network 
-modules-right = keyboard battery volume powermenu 
+modules-right = keyboard battery backlight volume powermenu 
 tray-position = none
 tray-padding = 2
 scroll-up = i3wm-wsnext
@@ -139,7 +139,7 @@ ramp-volume-2 = 
 type = internal/battery
 battery = BAT0
 adapter = ACAD
-full-at = 98
+full-at = 95
 format-charging = <animation-charging> <label-charging>
 ;format-charging-underline = #ffb52a
 format-discharging = <animation-discharging> <label-discharging>
@@ -147,7 +147,7 @@ format-discharging = <animation-discharging> <label-discharging>
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 ;format-full-underline = ${self.format-charging-underline}
-ramp-charging-0 = 
+ramp-charging-0 = 
 ramp-charging-1 = 
 ramp-charging-2 = 
 ramp-charging-3 = 
@@ -611,3 +611,35 @@ animation-packetloss-1 = 📶
 animation-packetloss-1-foreground = #000000
 ; Framerate in milliseconds
 animation-packetloss-framerate = 500
+
+
+
+
+[module/backlight]
+type = internal/backlight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <label> 
+
+; Available tokens:
+;   %percentage% (default)
+label = %percentage%
+
+; Only applies if <ramp> is used
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+
+; Only applies if <bar> is used
+bar-width = 10
+bar-indicator = |
+bar-fill = ─
+bar-empty = ─

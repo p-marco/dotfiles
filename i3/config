@@ -177,3 +177,11 @@ bindsym $ctrl+$mod+r mode "resize"
 exec --no-startup-id feh --bg-fill ~/Library/Pictures/bg.jpg
 exec --no-startup-id polybar mainbar & 
 # exec --no-startup-id conky -d -c ~/.config/.conkyrc
+
+
+bindsym XF86MonBrightnessUp exec "light -A 5"
+bindsym XF86MonBrightnessDown exec "light -U 5"
+
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
