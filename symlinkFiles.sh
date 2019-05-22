@@ -9,6 +9,7 @@ mkdir -p ~/.config/neofetch
 mkdir -p ~/.config/polybar
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/gtk-3.0
+mkdir -p ~/.config/openbox
 
 # Symlink files
 
@@ -22,4 +23,7 @@ ln -s -f ~/Vendors/dotfiles/rofi/side.rasi              ~/.config/rofi/side.rasi
 ln -s -f ~/Vendors/dotfiles/.Xresources                 ~/.Xresources
 ln -s -f ~/Vendors/dotfiles/gtk-3.0/settings.ini        ~/.config/gtk-3.0/settings.ini
 ln -s -f ~/Vendors/dotfiles/.gtk-2.0                    ~/.gtk-2.0
+ln -s -f ~/Vendors/dotfiles/openbox/autostart           ~/openbox/autostart
+
+
 cp ~/Vendors/dotfiles/summer.jpg                         ~/Library/Pictures/bg.jpg

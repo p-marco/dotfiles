@@ -1,0 +1,2 @@
+polybar mainbar &
+feh --bg-fill ~/Library/Pictures/bg.jpg &
