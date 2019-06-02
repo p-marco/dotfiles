@@ -326,9 +326,9 @@ label-separator = |
 label-separator-foreground = ${colors.foreground}
 
 menu-0-0 = reboot
-menu-0-0-exec = reboot
-menu-0-1 = power off
-menu-0-1-exec = poweroff
+menu-0-0-exec = shutdown -ar now
+menu-0-1 = shutdown
+menu-0-1-exec = shutdown -ah now 
 menu-0-2 = suspend
 menu-0-2-exec = betterlockscreen -s blur
 menu-0-3 = lock
