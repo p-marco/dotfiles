@@ -325,14 +325,15 @@ label-close-foreground = ${colors.foreground}
 label-separator = |
 label-separator-foreground = ${colors.foreground}
 
-menu-0-0 = reboot
-menu-0-0-exec = shutdown -ar now
-menu-0-1 = shutdown
-menu-0-1-exec = shutdown -ah now 
-menu-0-2 = suspend
-menu-0-2-exec = betterlockscreen -s blur
-menu-0-3 = lock
-menu-0-3-exec = betterlockscreen -l blur
+menu-0-0 = logout
+menu-0-0-exec = i3-msg-exit
+menu-0-1 = suspend
+menu-0-1-exec = systemctl suspend 
+menu-0-2 = shutdown
+menu-0-2-exec = shutdown -ah now 
+menu-0-3 = reboot
+menu-0-3-exec = shutdown -ar now
+
 
 [module/volume]
 color = ${colors.foreground}
