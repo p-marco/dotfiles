@@ -4,65 +4,67 @@
  */
 
 configuration {
-	display-drun:    "Activate";
-	display-run:     "Execute";
-	show-icons:      true;	
-	sidebar-mode:    true;
+	display-drun:    				"Activate";
+	display-run:     				"Execute";
+	show-icons:      				true;	
+	sidebar-mode:    				true;
 }
 
 * {
-	background-color:            #111111;
-	text-color:                  #d3d7cf;
-	selbg:                       rgb(0, 86, 136);
-	actbg:                       rgb(22, 37, 46);
-	urgbg:                       #e53935;
-	winbg:			     #26c6da;
-
-	selected-normal-foreground:  @winbg;
-	normal-foreground:           @text-color;
-	selected-normal-background:  @actbg;
-	normal-background:           @background-color;
-
-	selected-urgent-foreground:  @background-color;
-	urgent-foreground:           @text-color;
-	selected-urgent-background:  @urgbg;
-	urgent-background:           @background-color;
-
-	selected-active-foreground:  @winbg;
-	active-foreground:           @text-color;
-	selected-active-background:  @actbg;
-	active-background:           @selbg;
-
-	line-margin:                 1;
-	line-padding:                1;
-	separator-style:             "none";
-	hide-scrollbar:              "true";
-	margin:                      0px;
-	padding:                     0px;
-	font:            "Quicksand Medium 8";
-}
-
-window {
-	location:	 west;
-	anchor:		 west;
-	x-offset: 20px;
-	height:		 95%;
-	width:		 25%;
-	margin-right: 60px;
-	orientation: horizontal;
-	children:	 [mainbox];
-	margin-top: 30px;
+	background-color:            	#100a11;
+	text-color:                  	#fffbd8;
+	selbg:                       	#f7b32b;
+	actbg:                       	#222;
+	urgbg:                       	#f7b32b;
+	winbg:						 	#f7b32b;
+	
+	selected-normal-foreground:  	@winbg;
+	normal-foreground:           	@text-color;
+	selected-normal-background:  	@actbg;
+	normal-background:           	@background-color;
+	
+	selected-urgent-foreground:  	@background-color;
+	urgent-foreground:           	@text-color;
+	selected-urgent-background:  	@urgbg;
+	urgent-background:           	@background-color;
+	
+	selected-active-foreground:  	@winbg;
+	active-foreground:           	@text-color;
+	selected-active-background:  	@actbg;
+	active-background:           	@selbg;
+	
+	line-margin:                 	0;
+	line-padding:                	0;
+	separator-style:             	"none";
+	hide-scrollbar:              	"true";
+	margin:                      	0px;
+	padding:                     	0px;
+	font:            			 	"Quicksand Medium 8";
+}	
+	
+window {	
+	location:						west;
+	anchor:							west;
+	x-offset:						20px;
+	height:							95%;
+	width:							25%;
+	margin-right: 					60px;
+	orientation: 					horizontal;
+	children:	 					[mainbox];
+	margin-top: 					30px;
 }
 
 mainbox {
-	spacing:  0em;
-	padding: 0px;
-	width:200px;
-	children: [ inputbar, listview, sidebar ];
-	expand: true;
+	spacing:  						0em;
+	padding: 						0px;
+	width:							200px;
+	children: 						[ inputbar, listview, sidebar ];
+	expand: 						true;
 }
 
-button { padding: 5px 2px; }
+button { 
+	padding: 						5px 2px; 
+}
 
 button selected {
 	background-color: @active-background;
@@ -93,7 +95,7 @@ element {
 entry {
 	expand:         true;
 	text-color:     @normal-foreground;
-	background-color: rgb(25, 41, 51);
+	background-color: @normal-background;
 	vertical-align: 1;
 	padding:        0.6em;
 	font:            "Quicksand Medium 8";

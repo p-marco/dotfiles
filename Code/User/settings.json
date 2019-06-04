@@ -3,10 +3,10 @@
     "editor.wordWrap": "on",
 
     // "editor.minimap.enabled": false, // removes minimap
-    "editor.renderWhitespace": "none", // removes whitespace chars
-    "editor.renderIndentGuides": false, // removes indent guides
+    "editor.renderWhitespace": "none", 
+    "editor.renderIndentGuides": false,
     // "editor.renderLineHighlight": "none", // removes line highlight
-    "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+    "editor.overviewRulerBorder": true, // removes border from overview ruler (located on the right, same position as the scrollbar)
     "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
     "editor.folding": false, // removes the folding feature
     // "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
@@ -19,9 +19,9 @@
     "workbench.statusBar.visible": false, // removes the status bar
     // "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
     "workbench.colorCustomizations": { 
-          "sideBar.background": "#100a11",
-          "editor.background": "#100a11",
-          "editor.foreground": "#fffbd8",
+          "sideBar.background":     "#100a11",
+          "editor.background":      "#100a11",
+          "editor.foreground":      "#fffbd8",
           "activityBar.background": "#100a11",
           "activityBar.foreground": "#a9e5bb"
     },
@@ -29,6 +29,7 @@
     "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid S Fallback'",
     "editor.fontSize": 14,
+    "editor.lineHeight": 22,
     "terminal.integrated.lineHeight": 1,
     "editor.fontLigatures": true,
 

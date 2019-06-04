@@ -27,7 +27,14 @@ new_float pixel 0
 for_window [class="^.*"] border pixel 2
 
 
-client.focused #ffffff #ffffff #ffffff #ffffff     #999999
+# client.focused #ffffff #ffffff #ffffff #ffffff     #999999
+
+# class                         border          backgr.         text            indicator
+client.focused                  #fffbd8         #fffbd8         #fffbd8         #fffbd8
+client.focused_inactive         #100a11         #100a11         #a9e5bb         #100a11
+client.unfocused                #f7b32b         #100a11         #a9e5bb         #100a11
+client.urgent                   #e3170a         #e3170a         #e3170a         #e3170a
+
 
 #=================================================================
 #       GAPS
