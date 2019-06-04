@@ -326,7 +326,7 @@ label-separator = |
 label-separator-foreground = ${colors.foreground}
 
 menu-0-0 = logout
-menu-0-0-exec = i3-msg-exit
+menu-0-0-exec = i3-msg exit
 menu-0-1 = suspend
 menu-0-1-exec = systemctl suspend 
 menu-0-2 = shutdown
