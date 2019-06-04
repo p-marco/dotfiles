@@ -1,25 +1,22 @@
-
-
-
 ! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+*.foreground:   #fffbd8
+*.background:   #100a11
+*.cursorColor:  #fffbd8
 
 ! black
-*.color0:       #282a2e
-*.color8:       #373b41
+*.color0:       #100a11
+*.color8:       #100a11
 
 ! red
-*.color1:       #a54242
+*.color1:       #e3170a
 *.color9:       #cc6666
 
 ! green
-*.color2:       #8c9440
+*.color2:       #a9e5bb
 *.color10:      #b5bd68
 
 ! yellow
-*.color3:       #de935f
+*.color3:       #f7b32b
 *.color11:      #f0c674
 
 ! blue
@@ -41,11 +38,13 @@
 
 URxvt.scrollBar:    false
 
-URxvt.internalBorder:  5
+URxvt.internalBorder:  15
+URxvt.background:  #100a11
+URxvt.foreground:  #fffbd8
 
 
-URxvt.transparent: true
-URxvt.tintColor: #000
+URxvt.transparent: false
+URxvt.tintColor: #100a11
 URxvt.shading: 45
 ! other settings
 ! open URL in browser
@@ -55,3 +54,4 @@ URxvt.perl-ext-common: matcher
 ! normal font
 URxvt.font:xft:Source Code Pro:pixelsize=12:antialias=true,xft:Droid Sans Fallback:pixelsize=12:antialias=true
 URxvt.boldFont:xft:Source Code Pro:pixelsize=12:Bold:antialias=true,xft:Droid Sans Fallback:pixelsize=12:Bold:antialias=true
+

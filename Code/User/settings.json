@@ -18,14 +18,21 @@
     "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
     "workbench.statusBar.visible": false, // removes the status bar
     // "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
-    "workbench.colorCustomizations": { // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference 
-          "tab.activeBorder": "#0000" // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
-        },
-        "window.menuBarVisibility": "toggle",
-        "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
-        "editor.fontSize": 16,
-        "terminal.integrated.lineHeight": 1.5,
-        "editor.fontLigatures": true,
-        "terminal.integrated.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
-        "workbench.startupEditor": "newUntitledFile"
-}
+    "workbench.colorCustomizations": { 
+          "sideBar.background": "#100a11",
+          "editor.background": "#100a11",
+          "editor.foreground": "#fffbd8",
+          "activityBar.background": "#100a11",
+          "activityBar.foreground": "#a9e5bb"
+    },
+
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid S Fallback'",
+    "editor.fontSize": 14,
+    "terminal.integrated.lineHeight": 1,
+    "editor.fontLigatures": true,
+
+    "workbench.startupEditor": "newUntitledFile",
+
+  }
+

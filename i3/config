@@ -69,10 +69,10 @@ bindsym $ctrl+KP_Up focus up
 bindsym $ctrl+KP_Right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $win+Left focus left
+bindsym $win+Down focus down
+bindsym $win+Up focus up
+bindsym $win+Right focus right
 
 # move focused window
 bindsym $win+KP_Left   move left
