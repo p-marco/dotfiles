@@ -2,10 +2,11 @@
 *.foreground:   #fffbd8
 *.background:   #100a11
 *.cursorColor:  #fffbd8
+*.accent:       #f7b32b
 
 ! black
-*.color0:       #100a11
-*.color8:       #100a11
+*.color0:       #000000
+*.color8:       #666666
 
 ! red
 *.color1:       #e3170a

@@ -43,7 +43,7 @@ client.urgent                   #e3170a         #e3170a         #e3170a         
 gaps inner 20
 gaps outer 0
 # smart_gaps on
-smart_borders on
+# smart_borders on
 
 #=================================================================
 #       VARIABLE KEYS
@@ -181,8 +181,8 @@ bindsym $ctrl+$mod+r mode "resize"
 
 
 exec --no-startup-id feh --bg-fill ~/Library/Pictures/bg.jpg
-exec --no-startup-id polybar mainbar & 
-exec --no-startup-id xset -dpms
+exec --no-startup-id polybar mainbar &
+exec  xset -dpms
 
 
 bindsym XF86MonBrightnessUp exec "light -A 5"

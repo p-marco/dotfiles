@@ -17,9 +17,9 @@ const CONFIG = {
     {
       category: 'Profile',
       name: 'Mail',
-      key: 'gm',
+      key: 'mail',
       url: 'https://gmail.com',
-      search: '/#search/text={}',
+      search: '/#search/{}',
       color: 'linear-gradient(135deg, #dd5145, #dd5145)',
       icon: 'far fa-envelope',
       quickLaunch: true,
@@ -27,7 +27,7 @@ const CONFIG = {
     {
       category: 'Profile',
       name: 'Drive',
-      key: 'gd',
+      key: 'drive',
       url: 'https://drive.google.com',
       search: '/drive/search?q={}',
       color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
@@ -73,7 +73,7 @@ const CONFIG = {
     {
       category: 'Other',
       name: 'LinkedIn',
-      key: 'l',
+      key: 'in',
       url: 'https://linkedin.com',
       search: '/search/results/all/?keywords={}',
       color: 'linear-gradient(135deg, #006CA4, #0077B5)',
@@ -177,7 +177,7 @@ const CONFIG = {
    * Default search suggestions for the specified queries.
    */
   defaultSuggestions: {
-    g: ['g/issues', 'g/pulls', 'gist.github.com'],
+    git: ['g/issues', 'g/pulls', 'gist.github.com'],
     r: ['r/r/unixporn', 'r/r/startpages', 'r/r/webdev', 'r/r/technology'],
   },
 

@@ -33,7 +33,10 @@
     "terminal.integrated.lineHeight": 1,
     "editor.fontLigatures": true,
 
-    "workbench.startupEditor": "newUntitledFile",
+"workbench.startupEditor": "newUntitledFile",
+"files.associations": {
+      "*.rmd": "markdown"
+},
 
   }
 
