@@ -182,8 +182,9 @@ bindsym $ctrl+$mod+r mode "resize"
 
 exec --no-startup-id feh --bg-fill ~/Library/Pictures/bg.jpg
 exec --no-startup-id polybar mainbar &
-exec  xset -dpms
-
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
+exec --no-startup-id xset s off
 
 bindsym XF86MonBrightnessUp exec "light -A 5"
 bindsym XF86MonBrightnessDown exec "light -U 5"

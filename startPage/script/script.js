@@ -34,6 +34,27 @@ const CONFIG = {
       icon: 'fab fa-google-drive',
       quickLaunch: false,
     },
+    {
+      category: 'Profile',
+      name: 'Whatsapp',
+      key: 'wa',
+      url: 'https://web.whatsapp.com',
+      search: '/drive/search?q={}',
+      color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
+      icon: 'fab fa-whatsapp',
+      quickLaunch: false,
+    },
+    {
+      category: 'Profile',
+      name: 'Messenger',
+      key: 'msg',
+      url: 'https://messenger.com',
+      search: '/?qa={}',
+      color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
+      icon: 'fab fa-facebook-messenger',
+      quickLaunch: false,
+    },
+
 
     {
       category: 'Research',
